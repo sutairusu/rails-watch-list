@@ -1,0 +1,10 @@
+<div>
+  <h1>Add a new list</h1>
+</div>
+<div>
+  <%= simple_form_for(@list) do |f| %>
+    <%= f.input :name %>
+    <%# <%= f.association :movie %> %>
+    <%= f.submit class: "btn btn-primary" %>
+  <% end %>
+</div>
